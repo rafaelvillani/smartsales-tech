@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os detalhes dos produtos SmartSales Tech.">
+    <title>Detalhes do Produto | SmartSales Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">S</span>
+                <span class="logo-text">
+                    SMARTSALES
+                    <small>TECH</small>
+                </span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton"
+                    aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Início</a>
+                <a href="produtos.html" class="active">Produtos</a>
+                <a href="index.html#categorias">Categorias</a>
+                <a href="produtos.html">Ofertas</a>
+                <a href="index.html#rodape">Contato</a>
+            </nav>
+
+            <form class="search-box" id="searchForm">
+                <span>⌕</span>
+                <input type="search" id="searchInput"
+                       placeholder="Buscar produtos...">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+
+            <div class="header-actions">
+    <a href="login.html" class="account-button">
+        ♙ Minha conta
+    </a>
+
+    <a href="carrinho.html" class="cart-button"
+       aria-label="Carrinho">
+        🛒
+        <span id="cartCount">0</span>
+    </a>
+</div>
+
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="product-detail-page section-container">
+
+        <div class="product-breadcrumb">
+            <a href="index.html">Início</a>
+            <span>›</span>
+            <a href="produtos.html">Produtos</a>
+            <span>›</span>
+            <span>Detalhes do produto</span>
+        </div>
+
+        <section class="product-detail">
+
+            <!-- IMAGEM DO PRODUTO -->
+            
+<div class="detail-gallery">
+
+    <div class="detail-main-image">
+        <img
+            id="detailImage"
+            src="assets/imagens/lenovo-ideapad-3-1.jpg"
+            alt="Notebook Lenovo IdeaPad 3">
+    </div>
+
+    <div class="detail-thumbnails">
+
+        <button class="thumbnail active" aria-label="Imagem principal">
+            <img
+                src="assets/imagens/lenovo-ideapad-3-1.jpg"
+                alt="Lenovo IdeaPad 3 frontal">
+        </button>
+
+        <button class="thumbnail" aria-label="Vista lateral">
+            <img
+                src="assets/imagens/lenovo-ideapad-3-2.jpg"
+                alt="Lenovo IdeaPad 3 lateral">
+        </button>
+
+        <button class="thumbnail" aria-label="Vista superior">
+            <img
+                src="assets/imagens/lenovo-ideapad-3-3.jpg"
+                alt="Lenovo IdeaPad 3 superior">
+        </button>
+
+    </div>
+
+</div>
+
+
+            <!-- INFORMAÇÕES DO PRODUTO -->
+            <div class="detail-information">
+
+                <span class="detail-category">NOTEBOOKS</span>
+
+                <h1 id="detailName">
+                    Notebook Gamer Lenovo IdeaPad 3
+                </h1>
+
+                <div class="detail-rating">
+                    <span>★★★★★</span>
+                    <strong>4.8</strong>
+                    <small>(124 avaliações)</small>
+                </div>
+
+                <p class="detail-description">
+                    Desempenho e praticidade para acompanhar sua rotina.
+                    Ideal para estudos, trabalho e entretenimento,
+                    reunindo tecnologia e eficiência em um só produto.
+                </p>
+
+                <div class="detail-price-area">
+                    <span>Preço especial</span>
+                    <h2 id="detailPrice">R$ 5.499,00</h2>
+                    <p>Em até 10x sem juros no cartão</p>
+                </div>
+
+                <div class="detail-stock">
+                    <span class="stock-indicator"></span>
+                    Produto disponível em estoque
+                </div>
+
+                <div class="detail-purchase">
+
+                    <div class="quantity-control">
+                        <button id="decreaseQuantity" aria-label="Diminuir quantidade">−</button>
+                        <span id="quantity">1</span>
+                        <button id="increaseQuantity" aria-label="Aumentar quantidade">+</button>
+                    </div>
+
+                    <button class="detail-add-cart" id="detailAddCart">
+                        Adicionar ao carrinho
+                    </button>
+
+                </div>
+
+                <div class="detail-benefits">
+
+                    <div>
+                        <span>♧</span>
+                        <p>Frete grátis para todo o Brasil</p>
+                    </div>
+
+                    <div>
+                        <span>♢</span>
+                        <p>Compra segura e protegida</p>
+                    </div>
+
+                    <div>
+                        <span>↻</span>
+                        <p>Suporte especializado</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DESCRIÇÃO -->
+        <section class="product-description-section">
+
+            <h2>Sobre o produto</h2>
+
+            <p>
+                A SmartSales Tech seleciona produtos que unem qualidade,
+                inovação e praticidade. Este produto foi pensado para
+                oferecer uma experiência tecnológica completa,
+                atendendo às necessidades do dia a dia.
+            </p>
+
+        </section>
+
+        <div class="back-to-products">
+            <a href="produtos.html">← Voltar para os produtos</a>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="benefits-footer" id="rodape">
+
+        <div class="benefit">
+            <span class="benefit-icon">♧</span>
+            <div>
+                <strong>Frete grátis</strong>
+                <p>Para todo o Brasil</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">♢</span>
+            <div>
+                <strong>Compra segura</strong>
+                <p>Seus dados protegidos</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">✧</span>
+            <div>
+                <strong>Atendimento especializado</strong>
+                <p>Suporte antes e depois da compra</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html">
+            <span>⌂</span>
+            Início
+        </a>
+        <a href="produtos.html" class="selected">
+            <span>▦</span>
+            Produtos
+        </a>
+        <a href="carrinho.html">
+            <span>🛒</span>
+            Carrinho
+        </a>
+        <a href="login.html">
+            <span>♙</span>
+            Conta
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/produto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confira os produtos do seu carrinho SmartSales Tech.">
+    <title>Meu Carrinho | SmartSales Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">S</span>
+                <span class="logo-text">
+                    SMARTSALES
+                    <small>TECH</small>
+                </span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton"
+                    aria-label="Abrir menu">☰</button>
+
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="index.html#categorias">Categorias</a>
+                <a href="produtos.html">Ofertas</a>
+                <a href="index.html#rodape">Contato</a>
+            </nav>
+
+            <form class="search-box" id="searchForm">
+                <span>⌕</span>
+                <input type="search" id="searchInput"
+                       placeholder="Buscar produtos...">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+
+            <div class="header-actions">
+    <a href="login.html" class="account-button">
+        ♙ Minha conta
+    </a>
+
+    <a href="carrinho.html" class="cart-button"
+       aria-label="Carrinho">
+        🛒
+        <span id="cartCount">0</span>
+    </a>
+</div>
+
+        </div>
+    </header>
+
+    <!-- CONTEÚDO DO CARRINHO -->
+    <main class="cart-page section-container">
+
+        <div class="cart-breadcrumb">
+            <a href="index.html">Início</a>
+            <span>›</span>
+            <span>Meu carrinho</span>
+        </div>
+
+        <div class="cart-heading">
+            <div>
+                <h1>Meu carrinho</h1>
+                <p>Confira seus produtos antes de finalizar a compra.</p>
+            </div>
+
+            <a href="produtos.html" class="continue-shopping">
+                ← Continuar comprando
+            </a>
+        </div>
+
+<div class="cart-layout">
+
+    <!-- LISTA DE PRODUTOS -->
+    <section class="cart-products-section">
+
+        <div class="cart-section-title">
+            <h2>Seus produtos</h2>
+
+            <div class="cart-title-actions">
+                <span id="cartItemsCount">0 itens</span>
+
+                <button type="button" id="clearCartButton">
+                    Limpar carrinho
+                </button>
+            </div>
+        </div>
+
+        <div id="cartProducts" class="cart-products-list">
+        </div>
+
+        <div id="emptyCart" class="empty-cart" hidden>
+            <div class="empty-cart-icon">🛒</div>
+            <h2>Seu carrinho está vazio</h2>
+            <p>Que tal encontrar algo especial para você?</p>
+
+            <a href="produtos.html" class="empty-cart-button">
+                Explorar produtos
+            </a>
+        </div>
+
+    </section>
+
+    <!-- RESUMO DO PEDIDO -->
+    <aside class="cart-summary">
+
+        <h2>Resumo do pedido</h2>
+
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">R$ 0,00</strong>
+        </div>
+
+        <div class="summary-line">
+            <span>Frete</span>
+            <strong id="shippingValue">A calcular</strong>
+        </div>
+
+        <div class="shipping-area">
+            <label for="cepInput">Calcular entrega pelo CEP</label>
+
+            <div class="shipping-form">
+                <input
+                    type="text"
+                    id="cepInput"
+                    placeholder="00000-000"
+                    maxlength="9"
+                    inputmode="numeric"
+                >
+
+                <button type="button" id="calculateShippingButton">
+                    Calcular
+                </button>
+            </div>
+
+            <p id="shippingMessage" class="shipping-message"></p>
+        </div>
+
+        <div class="coupon-area">
+            <label for="couponInput">Cupom de desconto</label>
+
+            <div class="coupon-form">
+                <input
+                    type="text"
+                    id="couponInput"
+                    placeholder="Digite seu cupom"
+                    autocomplete="off"
+                >
+
+                <button type="button" id="applyCouponButton">
+                    Aplicar
+                </button>
+            </div>
+
+            <p id="couponMessage" class="coupon-message"></p>
+        </div>
+
+        <div class="summary-line coupon-discount-line"
+             id="couponDiscountLine" hidden>
+            <span>Desconto</span>
+            <strong id="couponDiscount">- R$ 0,00</strong>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+
+        <p class="cart-installments">
+            Em até 10x sem juros no cartão.
+        </p>
+
+        <button id="checkoutButton" class="checkout-button">
+            Finalizar compra →
+        </button>
+
+        <div class="cart-security">
+            <span>♢</span>
+            Compra segura e protegida
+        </div>
+
+        <div class="cart-security">
+            <span>♧</span>
+            Frete grátis para todo o Brasil
+        </div>
+
+    </aside>
+
+</div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="benefits-footer" id="rodape">
+
+        <div class="benefit">
+            <span class="benefit-icon">♧</span>
+            <div>
+                <strong>Frete grátis</strong>
+                <p>Para todo o Brasil</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">♢</span>
+            <div>
+                <strong>Compra segura</strong>
+                <p>Seus dados protegidos</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">✧</span>
+            <div>
+                <strong>Atendimento especializado</strong>
+                <p>Suporte antes e depois da compra</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html">
+            <span>⌂</span>
+            Início
+        </a>
+        <a href="produtos.html">
+            <span>▦</span>
+            Produtos
+        </a>
+        <a href="carrinho.html" class="selected">
+            <span>🛒</span>
+            Carrinho
+        </a>
+        <a href="login.html">
+            <span>♙</span>
+            Conta
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrinho.js"></script>
+
+</body>
+</html>

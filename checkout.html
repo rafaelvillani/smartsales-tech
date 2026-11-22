@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finalize sua compra na SmartSales Tech.">
+    <title>Finalizar Compra | SmartSales Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">S</span>
+                <span class="logo-text">
+                    SMARTSALES
+                    <small>TECH</small>
+                </span>
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="index.html#categorias">Categorias</a>
+            </nav>
+
+            <div class="header-actions">
+    <a href="login.html" class="account-button">
+        ♙ Minha conta
+    </a>
+
+    <a href="carrinho.html" class="cart-button">
+        🛒 <span id="cartCount">0</span>
+    </a>
+</div>
+
+        </div>
+    </header>
+
+    <main class="checkout-page section-container">
+
+        <div class="checkout-breadcrumb">
+            <a href="index.html">Início</a>
+            <span>›</span>
+            <a href="carrinho.html">Carrinho</a>
+            <span>›</span>
+            <span>Finalizar compra</span>
+        </div>
+
+        <div class="checkout-heading">
+            <h1>Finalizar compra</h1>
+            <p>Estamos quase lá! Confira seus dados para concluir o pedido.</p>
+        </div>
+
+        <div class="checkout-layout">
+
+            <section class="checkout-form-section">
+
+                <form id="checkoutForm">
+
+                    <div class="checkout-card">
+                        <h2>01. Dados pessoais</h2>
+
+                        <div class="checkout-fields">
+                            <div class="checkout-field full">
+                                <label for="customerName">Nome completo</label>
+                                <input type="text" id="customerName" required
+                                    placeholder="Digite seu nome completo">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="customerCpf">CPF</label>
+                                <input type="text" id="customerCpf" required
+                                    maxlength="14" placeholder="000.000.000-00">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="customerPhone">Telefone</label>
+                                <input type="tel" id="customerPhone" required
+                                    placeholder="(00) 00000-0000">
+                            </div>
+
+                            <div class="checkout-field full">
+                                <label for="customerEmail">E-mail</label>
+                                <input type="email" id="customerEmail" required
+                                    placeholder="seuemail@exemplo.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <h2>02. Endereço de entrega</h2>
+
+                        <div class="checkout-fields">
+
+                            <div class="checkout-field">
+                                <label for="addressCep">CEP</label>
+                                <input type="text" id="addressCep" required
+                                    maxlength="9" placeholder="00000-000">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="addressState">Estado</label>
+                                <input type="text" id="addressState" required
+                                    placeholder="Ex.: SP">
+                            </div>
+
+                            <div class="checkout-field full">
+                                <label for="addressStreet">Rua / Avenida</label>
+                                <input type="text" id="addressStreet" required
+                                    placeholder="Nome da rua ou avenida">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="addressNumber">Número</label>
+                                <input type="text" id="addressNumber" required
+                                    placeholder="Número">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="addressComplement">Complemento</label>
+                                <input type="text" id="addressComplement"
+                                    placeholder="Apartamento, bloco etc.">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="addressNeighborhood">Bairro</label>
+                                <input type="text" id="addressNeighborhood" required
+                                    placeholder="Bairro">
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="addressCity">Cidade</label>
+                                <input type="text" id="addressCity" required
+                                    placeholder="Cidade">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <h2>03. Forma de pagamento</h2>
+
+                        <div class="payment-options">
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod"
+                                    value="Pix" required>
+                                <span>♢</span>
+                                <div>
+                                    <strong>Pix</strong>
+                                    <small>Pagamento instantâneo</small>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod"
+                                    value="Cartão de crédito">
+                                <span>▣</span>
+                                <div>
+                                    <strong>Cartão de crédito</strong>
+                                    <small>Em até 10x sem juros</small>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod"
+                                    value="Boleto">
+                                <span>▤</span>
+                                <div>
+                                    <strong>Boleto bancário</strong>
+                                    <small>Pagamento por boleto</small>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="place-order-button">
+                        Confirmar pedido →
+                    </button>
+
+                    <p class="checkout-security">
+                        ♢ Seus dados são protegidos durante a compra.
+                    </p>
+
+                </form>
+
+            </section>
+
+            <aside class="checkout-summary">
+                <h2>Resumo do pedido</h2>
+
+                <div id="checkoutProducts">
+                    <p>Carregando produtos...</p>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <strong id="checkoutSubtotal">R$ 0,00</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Frete</span>
+                    <strong id="checkoutShipping">A calcular</strong>
+                </div>
+
+                <div class="summary-line" id="checkoutDiscountLine" hidden>
+                    <span>Desconto</span>
+                    <strong id="checkoutDiscount">R$ 0,00</strong>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">R$ 0,00</strong>
+                </div>
+
+                <a href="carrinho.html" class="back-cart-link">
+                    ← Voltar ao carrinho
+                </a>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer class="benefits-footer">
+        <div class="benefit">
+            <span class="benefit-icon">♧</span>
+            <div>
+                <strong>Frete grátis</strong>
+                <p>Para todo o Brasil</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">♢</span>
+            <div>
+                <strong>Compra segura</strong>
+                <p>Seus dados protegidos</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">✧</span>
+            <div>
+                <strong>Atendimento especializado</strong>
+                <p>Suporte ao cliente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>

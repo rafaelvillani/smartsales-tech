@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta | SmartSales Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <span>SmartSales</span> Tech
+        </a>
+
+        <a href="index.html" class="back-home">
+            Voltar à loja
+        </a>
+    </div>
+</header>
+
+<main class="account-page">
+
+    <section class="account-card">
+
+        <div class="account-brand">
+            <h1>SmartSales <span>Tech</span></h1>
+            <p>Sua tecnologia, suas melhores escolhas.</p>
+        </div>
+
+        <div class="account-tabs">
+            <button type="button" id="loginTab" class="active">
+                Entrar
+            </button>
+
+            <button type="button" id="registerTab">
+                Criar conta
+            </button>
+        </div>
+
+        <!-- LOGIN -->
+
+        <form id="loginForm" class="account-form">
+
+            <h2>Bem-vindo de volta!</h2>
+            <p>Acesse sua conta para continuar.</p>
+
+            <label for="loginEmail">E-mail</label>
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <label for="loginPassword">Senha</label>
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Digite sua senha"
+                required
+            >
+
+            <button type="submit" class="account-submit">
+                Entrar na minha conta
+            </button>
+
+            <p id="loginMessage" class="account-message"></p>
+
+            <div class="account-switch">
+                Ainda não tem uma conta?
+                <button type="button" id="goRegister">
+                    Cadastre-se
+                </button>
+            </div>
+
+        </form>
+
+        <!-- CADASTRO -->
+
+        <form id="registerForm" class="account-form" hidden>
+
+            <h2>Crie sua conta</h2>
+            <p>Faça parte da SmartSales Tech!</p>
+
+            <label for="registerName">Nome completo</label>
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Seu nome completo"
+                required
+            >
+
+            <label for="registerCpf">CPF</label>
+            <input
+                type="text"
+                id="registerCpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                required
+            >
+
+            <label for="registerPhone">Telefone</label>
+            <input
+                type="tel"
+                id="registerPhone"
+                placeholder="(11) 99999-9999"
+                maxlength="15"
+                required
+            >
+
+            <label for="registerEmail">E-mail</label>
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="seuemail@email.com"
+                required
+            >
+
+            <label for="registerPassword">Senha</label>
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Crie uma senha"
+                minlength="6"
+                required
+            >
+
+            <label for="confirmPassword">Confirmar senha</label>
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Digite sua senha novamente"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" class="account-submit">
+                Criar minha conta
+            </button>
+
+            <p id="registerMessage" class="account-message"></p>
+
+            <div class="account-switch">
+                Já possui uma conta?
+                <button type="button" id="goLogin">
+                    Fazer login
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/conta.js"></script>
+
+</body>
+</html>

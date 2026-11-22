@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartSales Tech - Os melhores produtos de tecnologia em um só lugar.">
+    <title>SmartSales Tech | Tecnologia de verdade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">S</span>
+                <span class="logo-text">
+                    SMARTSALES
+                    <small>TECH</small>
+                </span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton"
+                    aria-label="Abrir menu">
+                ☰
+            </button>
+
+           <nav class="navigation" id="navigation">
+    <a href="index.html" class="active">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="index.html#categorias">Categorias</a>
+    <a href="produtos.html">Ofertas</a>
+    <a href="index.html#rodape">Contato</a>
+</nav>
+
+            <form class="search-box" id="searchForm">
+                <span>⌕</span>
+                <input type="search" id="searchInput"
+                       placeholder="Buscar produtos...">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+
+        <div class="header-actions">
+
+    <a href="login.html" class="account-button">
+        ♙ Minha conta
+    </a>
+
+    <a href="carrinho.html" class="cart-button"
+       aria-label="Carrinho">
+        🛒
+        <span id="cartCount">0</span>
+    </a>
+
+</div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">TECNOLOGIA DE VERDADE</span>
+
+                <h1>Os melhores produtos<br class="desktop-break">
+                    em um só lugar.</h1>
+
+                <p>Laptops, smartphones, acessórios e muito mais.</p>
+
+                <a href="#produtos" class="hero-button">
+                    Explorar produtos <span>➜</span>
+                </a>
+            </div>
+
+            <div class="hero-image"></div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="categories section-container" id="categorias">
+
+            <a href="#produtos" class="category-card" data-category="notebooks">
+                <span class="category-icon">▱</span>
+                <span>Notebooks</span>
+            </a>
+
+            <a href="#produtos" class="category-card" data-category="smartphones">
+                <span class="category-icon">▯</span>
+                <span>Smartphones</span>
+            </a>
+
+            <a href="#produtos" class="category-card" data-category="fones">
+                <span class="category-icon">♬</span>
+                <span>Fones</span>
+            </a>
+
+            <a href="#produtos" class="category-card" data-category="smartwatches">
+                <span class="category-icon">◷</span>
+                <span>Smartwatches</span>
+            </a>
+
+            <a href="#produtos" class="category-card" data-category="games">
+                <span class="category-icon">♧</span>
+                <span>Games</span>
+            </a>
+
+            <a href="#produtos" class="category-card" data-category="acessorios">
+                <span class="category-icon">⌁</span>
+                <span>Acessórios</span>
+            </a>
+
+        </section>
+
+        <!-- PRODUTOS EM DESTAQUE -->
+        <section class="products-section section-container" id="produtos">
+
+            <div class="section-heading">
+                <h2>Produtos em destaque</h2>
+                <a href="#produtos">Ver todos <span>➜</span></a>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- PRODUTO 1 -->
+                <article class="product-card" data-category="notebooks"
+                         data-name="Notebook Gamer Lenovo IdeaPad 3">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop"
+                             alt="Notebook Lenovo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Notebook Gamer Lenovo IdeaPad 3</h3>
+                        <div class="rating">★ 4.8 <small>(124)</small></div>
+                        <p class="product-price">R$ 5.499,00</p>
+                        <button class="add-cart-button" data-id="1">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="product-card" data-category="smartphones"
+                         data-name="iPhone 15 128GB">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500&auto=format&fit=crop"
+                             alt="Smartphone">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 128GB</h3>
+                        <div class="rating">★ 4.7 <small>(98)</small></div>
+                        <p class="product-price">R$ 4.799,00</p>
+                        <button class="add-cart-button" data-id="2">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 3 -->
+                <article class="product-card" data-category="fones"
+                         data-name="Fone Bluetooth JBL Tune 710BT">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop"
+                             alt="Fone de ouvido">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fone Bluetooth JBL Tune 710BT</h3>
+                        <div class="rating">★ 4.7 <small>(332)</small></div>
+                        <p class="product-price">R$ 1.299,00</p>
+                        <button class="add-cart-button" data-id="3">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 4 -->
+                <article class="product-card" data-category="smartwatches"
+                         data-name="Smartwatch Galaxy Watch 4">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop"
+                             alt="Relógio inteligente">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartwatch Galaxy Watch 4 44mm</h3>
+                        <div class="rating">★ 4.7 <small>(132)</small></div>
+                        <p class="product-price">R$ 1.299,00</p>
+                        <button class="add-cart-button" data-id="4">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 5 -->
+                <article class="product-card" data-category="games"
+                         data-name="PlayStation 5 com Controle">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500&auto=format&fit=crop"
+                             alt="Console de videogame">
+                    </div>
+                    <div class="product-info">
+                        <h3>PlayStation 5 + Controle</h3>
+                        <div class="rating">★ 4.9 <small>(76)</small></div>
+                        <p class="product-price">R$ 4.999,00</p>
+                        <button class="add-cart-button" data-id="5">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 6 -->
+                <article class="product-card" data-category="acessorios"
+                         data-name="Mouse Gamer Logitech G Pro X">
+                    <button class="favorite-button" aria-label="Favoritar produto">♡</button>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&auto=format&fit=crop"
+                             alt="Mouse gamer">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mouse Gamer Logitech G Pro X</h3>
+                        <div class="rating">★ 4.7 <small>(56)</small></div>
+                        <p class="product-price">R$ 549,00</p>
+                        <button class="add-cart-button" data-id="6">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                Nenhum produto encontrado.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="benefits-footer" id="rodape">
+
+        <div class="benefit">
+            <span class="benefit-icon">♧</span>
+            <div>
+                <strong>Frete grátis</strong>
+                <p>Para todo o Brasil</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">♢</span>
+            <div>
+                <strong>Compra segura</strong>
+                <p>Seus dados protegidos</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span class="benefit-icon">✧</span>
+            <div>
+                <strong>Atendimento especializado</strong>
+                <p>Suporte antes e depois da compra</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- MENU INFERIOR MOBILE -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="selected">
+            <span>⌂</span>
+            Início
+        </a>
+        <a href="#produtos">
+            <span>▦</span>
+            Produtos
+        </a>
+        <a href="pages/carrinho.html">
+            <span>🛒</span>
+            Carrinho
+        </a>
+        <a href="pages/login.html">
+            <span>♙</span>
+            Conta
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
